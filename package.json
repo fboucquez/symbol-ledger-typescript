@@ -1,0 +1,74 @@
+{
+    "name": "symbol-ledger-typescript",
+    "version": "0.0.1",
+    "description": "A library to connect symbol typescript/javascript apps with ledger",
+    "homepage": "https://github.com/fboucquez/symbol-ledger-typescript",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/fboucquez/symbol-ledger-typescript.git"
+    },
+    "bugs": {
+        "url": "https://github.com/fboucquez/symbol-ledger-typescript"
+    },
+    "main": "lib/index.js",
+    "scripts": {
+        "doc": "typedoc --out \"ts-docs\" src && touch ./ts-docs/.nojekyll",
+        "prepack": "rm -rf lib && tsc -b",
+        "build": "tsc",
+        "watch": "tsc -w",
+        "test": "nyc --reporter=lcov --extension .ts mocha -r ts-node/register --timeout 600000 --forbid-only \"test/**/*.test.ts\"",
+        "e2e": "nyc --reporter=lcov --extension .ts mocha -r ts-node/register --timeout 600000 --forbid-only \"test/**/*.e2e.ts\"",
+        "coveralls-report": "cat ./coverage/lcov.info | coveralls",
+        "lint": "eslint --cache src/ test/ --ext .ts",
+        "lint:fix": "eslint src/ test/ --ext .ts --fix",
+        "prettier": "prettier --write ./src ./test",
+        "style:fix": "npm run create-index-files && npm run prettier && npm run lint:fix",
+        "version": "echo $npm_package_version",
+        "create-index-files": "cti create ./src -b -n -e commands -i app.ts"
+    },
+    "keywords": [
+        "Typescript",
+        "Symbol",
+        "node",
+        "javascript"
+    ],
+    "engines": {
+        "node": ">=12.0.0"
+    },
+    "files": [
+        "/lib"
+    ],
+    "author": "Fernando Boucquez",
+    "license": "Apache-2.0",
+    "devDependencies": {
+        "@ledgerhq/hw-transport-node-hid": "^5.51.1",
+        "@ledgerhq/hw-transport-node-speculos": "^5.51.1",
+        "@types/chai": "^4.2.12",
+        "@types/ledgerhq__hw-transport": "^4.21.3",
+        "@types/ledgerhq__hw-transport-node-hid": "^4.22.2",
+        "@types/mocha": "^8.2.2",
+        "@types/node": "^14.14.41",
+        "@typescript-eslint/eslint-plugin": "^3.10.1",
+        "@typescript-eslint/parser": "^3.10.1",
+        "chai": "^4.2.0",
+        "coveralls": "^3.1.0",
+        "create-ts-index": "^1.13.6",
+        "eslint": "^6.8.0",
+        "eslint-config-prettier": "^6.10.1",
+        "eslint-plugin-prettier": "^3.1.3",
+        "mocha": "^8.3.2",
+        "mocha-lcov-reporter": "^1.3.0",
+        "nyc": "^15.1.0",
+        "prettier": "^2.0.5",
+        "prettier-plugin-organize-imports": "^1.1.1",
+        "symbol-sdk": "^1.0.1",
+        "ts-mockito": "^2.6.1",
+        "ts-node": "^8.10.2",
+        "typedoc": "^0.20.36",
+        "typescript": "^3.9.7"
+    },
+    "dependencies": {
+        "@ledgerhq/hw-transport": "^5.51.0",
+        "bip32-path": "^0.4.2"
+    }
+}
