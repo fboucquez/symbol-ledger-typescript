@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>AppVersion | symbol-ledger-typescript</title>
+	<title>ApduPackage | symbol-ledger-typescript</title>
 	<meta name="description" content="Documentation for symbol-ledger-typescript">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -58,21 +58,28 @@
 					<a href="../modules/symbolledger.html">SymbolLedger</a>
 				</li>
 				<li>
-					<a href="symbolledger.appversion.html">AppVersion</a>
+					<a href="symbolledger.apdupackage.html">ApduPackage</a>
 				</li>
 			</ul>
-			<h1>Interface AppVersion</h1>
+			<h1>Interface ApduPackage</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">AppVersion</span>
+						<span class="target">ApduPackage</span>
 					</li>
 				</ul>
 			</section>
@@ -83,9 +90,11 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="symbolledger.appversion.html#majorversion" class="tsd-kind-icon">major<wbr>Version</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="symbolledger.appversion.html#minorversion" class="tsd-kind-icon">minor<wbr>Version</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="symbolledger.appversion.html#patchversion" class="tsd-kind-icon">patch<wbr>Version</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="symbolledger.apdupackage.html#cla" class="tsd-kind-icon">cla</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="symbolledger.apdupackage.html#data" class="tsd-kind-icon">data</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="symbolledger.apdupackage.html#ins" class="tsd-kind-icon">ins</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="symbolledger.apdupackage.html#p1" class="tsd-kind-icon">p1</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="symbolledger.apdupackage.html#p2" class="tsd-kind-icon">p2</a></li>
 							</ul>
 						</section>
 					</div>
@@ -94,32 +103,52 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="majorversion" class="tsd-anchor"></a>
-					<h3>major<wbr>Version</h3>
-					<div class="tsd-signature tsd-kind-icon">major<wbr>Version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="cla" class="tsd-anchor"></a>
+					<h3>cla</h3>
+					<div class="tsd-signature tsd-kind-icon">cla<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fboucquez/symbol-ledger-typescript/blob/c83465b/src/SymbolLedger.ts#L20">SymbolLedger.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/fboucquez/symbol-ledger-typescript/blob/c83465b/src/SymbolLedger.ts#L32">SymbolLedger.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="minorversion" class="tsd-anchor"></a>
-					<h3>minor<wbr>Version</h3>
-					<div class="tsd-signature tsd-kind-icon">minor<wbr>Version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="data" class="tsd-anchor"></a>
+					<h3>data</h3>
+					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Buffer</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fboucquez/symbol-ledger-typescript/blob/c83465b/src/SymbolLedger.ts#L21">SymbolLedger.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/fboucquez/symbol-ledger-typescript/blob/c83465b/src/SymbolLedger.ts#L31">SymbolLedger.ts:31</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="patchversion" class="tsd-anchor"></a>
-					<h3>patch<wbr>Version</h3>
-					<div class="tsd-signature tsd-kind-icon">patch<wbr>Version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="ins" class="tsd-anchor"></a>
+					<h3>ins</h3>
+					<div class="tsd-signature tsd-kind-icon">ins<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fboucquez/symbol-ledger-typescript/blob/c83465b/src/SymbolLedger.ts#L22">SymbolLedger.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/fboucquez/symbol-ledger-typescript/blob/c83465b/src/SymbolLedger.ts#L33">SymbolLedger.ts:33</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="p1" class="tsd-anchor"></a>
+					<h3>p1</h3>
+					<div class="tsd-signature tsd-kind-icon">p1<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/fboucquez/symbol-ledger-typescript/blob/c83465b/src/SymbolLedger.ts#L29">SymbolLedger.ts:29</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="p2" class="tsd-anchor"></a>
+					<h3>p2</h3>
+					<div class="tsd-signature tsd-kind-icon">p2<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/fboucquez/symbol-ledger-typescript/blob/c83465b/src/SymbolLedger.ts#L30">SymbolLedger.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -156,27 +185,33 @@
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/symbolledger.symbolledger-1.html" class="tsd-kind-icon">Symbol<wbr>Ledger</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="symbolledger.apdupackage.html" class="tsd-kind-icon">Apdu<wbr>Package</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="symbolledger.appversion.html" class="tsd-kind-icon">App<wbr>Version</a>
+						<a href="symbolledger.apdupackage.html" class="tsd-kind-icon">Apdu<wbr>Package</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="symbolledger.appversion.html#majorversion" class="tsd-kind-icon">major<wbr>Version</a>
+								<a href="symbolledger.apdupackage.html#cla" class="tsd-kind-icon">cla</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="symbolledger.appversion.html#minorversion" class="tsd-kind-icon">minor<wbr>Version</a>
+								<a href="symbolledger.apdupackage.html#data" class="tsd-kind-icon">data</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="symbolledger.appversion.html#patchversion" class="tsd-kind-icon">patch<wbr>Version</a>
+								<a href="symbolledger.apdupackage.html#ins" class="tsd-kind-icon">ins</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="symbolledger.apdupackage.html#p1" class="tsd-kind-icon">p1</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="symbolledger.apdupackage.html#p2" class="tsd-kind-icon">p2</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="symbolledger.appversion.html" class="tsd-kind-icon">App<wbr>Version</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
